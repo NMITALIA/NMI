@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Visualizzatore Normativa</title>
+  <style>
+    body { display: flex; }
+    #fileList { width: 30%; padding: 10px; border-right: 1px solid #ccc; }
+    iframe { width: 65%; height: 100vh; border: none; }
+    .folder, .file { cursor: pointer; margin: 8px 0; }
+    .file { margin-left: 20px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div id="fileList"><div class="folder" onclick="loadFiles()">📂 Normativa</div><div id="folders"></div></div>
+  <iframe id="fileViewer"></iframe>
+  <script src="renderer.js"></script>
+</body>
+</html>
