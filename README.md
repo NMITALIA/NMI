@@ -1,2 +1,0 @@
-# NMI
-Progetto procedure
